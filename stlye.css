@@ -38,9 +38,11 @@ body {
   background-repeat: no-repeat;
   background-position: left -155px top -75px;
   background-size: 100%; */
-  background: url('/images/bg-pattern-top.svg') left -155px top -75px no-repeat,
-    url('/images/bg-pattern-bottom.svg') right -155px bottom -75px no-repeat;
-  background-size: 100%;
+  background-image: url('/images/bg-pattern-top.svg'),
+    url('/images/bg-pattern-bottom.svg');
+  background-size: 120%, 120%;
+  background-position: left -200px top -110px, right -200px bottom -110px;
+  background-repeat: no-repeat;
   padding: 6rem 2rem;
 }
 
