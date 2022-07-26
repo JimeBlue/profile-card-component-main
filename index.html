@@ -15,16 +15,27 @@
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
-    <main>
+    <main> 
       <section class="card">
-        <header class="card__header"></header>
+        <div class="card__container">
+          <header class="card__header"></header>
+          <div class="card__content">
+            <h3 class="name">Victor Crest</h3>
+            <h3 class="age">26</h3>
+            <h4 class="city">London</h4>
+          </div>
+          <footer class="card__footer">
+            <h3 class="number">80K</h3>
+            <h3 class="number">803K</h3>
+            <h3 class="number">1.4k</h3>
+            <h4 class="stat-heading">Followers</h3>
+            <h4 class="stat-heading">Likes</h3>
+            <h4 class="stat-heading">Photos</h3>
+          </footer>
+        </div>
         <div class="card__img">
           <img src="/images/image-victor.jpg" alt="profile photo" />
         </div>
-        <div class="card__content">
-          Victor Crest 26 London 80K Followers 803K Likes 1.4K Photos
-        </div>
-        <footer class="card__footer"></footer>
       </section>
     </main>
   </body>

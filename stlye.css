@@ -23,3 +23,124 @@
 
   --kumbh-sans: 'Kumbh Sans', sans-serif;
 }
+
+html {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--kumbh-sans);
+  background-color: var(--dark-cyan);
+  /* background-image: url('/images/bg-pattern-top.svg');
+  background-repeat: no-repeat;
+  background-position: left -155px top -75px;
+  background-size: 100%; */
+  background: url('/images/bg-pattern-top.svg') left -155px top -75px no-repeat,
+    url('/images/bg-pattern-bottom.svg') right -155px bottom -75px no-repeat;
+  background-size: 100%;
+  padding: 6rem 2rem;
+}
+
+h3,
+h4 {
+  margin: 0;
+}
+
+.card {
+  border-radius: 10px;
+  position: relative;
+}
+
+.card__container {
+  width: 18.75rem;
+}
+
+/* Card header */
+
+.card__header {
+  background-image: url('/images/bg-pattern-card.svg');
+  padding: 4.5rem;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Card content */
+
+.card__content {
+  background: #fff;
+  width: 100%;
+  display: grid;
+  justify-items: end;
+  column-gap: 0.7rem;
+  row-gap: 0.8rem;
+  padding: 3.5rem 3.5rem 2rem 3.5rem;
+  border-bottom: 0.1px solid lightgray;
+}
+
+.name {
+  grid-column: 1 / 2;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+  margin-top: 1rem;
+}
+
+.age {
+  grid-column: 2 / 3;
+  justify-self: start;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+  margin-top: 1rem;
+}
+
+.city {
+  grid-column: 1 / 3;
+  justify-self: center;
+  font-size: 0.875rem;
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+}
+
+/* Card footer */
+.card__footer {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0 0 10px 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  row-gap: 0.4rem;
+}
+
+.number {
+  font-size: large;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.stat-heading {
+  font-size: 0.65rem;
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+/* Card profile image */
+
+.card__img {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+.card__img img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  display: block;
+  margin: 0 auto;
+}
